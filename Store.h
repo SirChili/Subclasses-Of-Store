@@ -31,7 +31,7 @@ public:
 	void setDronDeliveryBool(bool);
 
 	WebStore();
-	WebStore(string, bool);
+	WebStore(string, string, bool, double);
 
 	string getWebAddress();
 	bool getDroneDeliveryBool();
@@ -48,7 +48,7 @@ public:
 	void setHasWifi(bool);
 
 	PhysicalStore();
-	PhysicalStore(string, bool);
+	PhysicalStore(string, string, double, bool);
 
 	string getPhysicalAddress();
 	bool getHasWifi();
@@ -69,6 +69,6 @@ public:
 	bool getIsChain();
 
 	GroceryStore();
-	GroceryStore(bool,bool);
+	GroceryStore(string, double, string, bool, bool, bool);
 
 };
