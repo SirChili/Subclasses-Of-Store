@@ -55,3 +55,20 @@ public:
 
 };
 
+class GroceryStore : public PhysicalStore
+{
+public:
+
+	bool HasProduce;
+	bool isChain;
+
+	void setHasProduce(bool);
+	void setIsChain(bool);
+
+	bool getHasProduce();
+	bool getIsChain();
+
+	GroceryStore();
+	GroceryStore(bool,bool);
+
+};
