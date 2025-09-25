@@ -46,15 +46,16 @@ void WebStore::setDronDeliveryBool(bool d)
 	hasDronDelivery = d;
 }
 
-
 WebStore::WebStore()
 {
 }
 
-WebStore::WebStore(string a, bool d)
+WebStore::WebStore(string n, string a, bool d, double r)
 {
 	webAddress = a;
 	hasDronDelivery = d;
+	revenue = r;
+	name = n;
 }
 
 string WebStore::getWebAddress()
@@ -84,10 +85,12 @@ PhysicalStore::PhysicalStore()
 {
 }
 
-PhysicalStore::PhysicalStore(string a, bool w)
+PhysicalStore::PhysicalStore(string n, string a,double r, bool w)
 {
+	name = n;
 	physicalAddress = a;
 	hasWifi = w;
+	revenue = r;
 }
 
 string PhysicalStore::getPhysicalAddress()
@@ -101,26 +104,38 @@ bool PhysicalStore::getHasWifi()
 }
 //GroceryStore Functions and Variables
 //----------------------------------------------------------------
-void GroceryStore::setHasProduce(bool)
+void GroceryStore::setHasProduce(bool p)
 {
+	HasProduce = p;
 }
 
-void GroceryStore::setIsChain(bool)
+void GroceryStore::setIsChain(bool c)
 {
+	isChain = c;
 }
 
 bool GroceryStore::getHasProduce()
 {
-	return false;
+	return HasProduce;
 }
 
 bool GroceryStore::getIsChain()
 {
-	return false;
+	return isChain;
 }
 
 GroceryStore::GroceryStore()
 {
+}
+
+GroceryStore::GroceryStore(string n, double r, string a, bool w, bool c, bool p)
+{
+	name = n;
+	revenue = r;
+	physicalAddress = a;
+	hasWifi = w;
+	HasProduce = p;
+	isChain = c;
 }
 
 GroceryStore::GroceryStore(bool, bool)
