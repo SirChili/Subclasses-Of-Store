@@ -42,3 +42,7 @@ int main() {
 	cout << "Business Name: " << item2.getStoreName() << "\n";
 	cout << "Business Revenue: $" << item2.getStoreRevenue() << "\n\n";
 }
+
+//Output the variables of the Grocery Store Class
+
+//Make sure to look at the teacher wanted output so you can change the outputs to the expected output
