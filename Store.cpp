@@ -99,3 +99,30 @@ bool PhysicalStore::getHasWifi()
 {
 	return hasWifi;
 }
+//GroceryStore Functions and Variables
+//----------------------------------------------------------------
+void GroceryStore::setHasProduce(bool)
+{
+}
+
+void GroceryStore::setIsChain(bool)
+{
+}
+
+bool GroceryStore::getHasProduce()
+{
+	return false;
+}
+
+bool GroceryStore::getIsChain()
+{
+	return false;
+}
+
+GroceryStore::GroceryStore()
+{
+}
+
+GroceryStore::GroceryStore(bool, bool)
+{
+}
